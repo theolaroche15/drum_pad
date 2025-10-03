@@ -1,61 +1,30 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Drum Pad</title>
     <link rel="stylesheet" href="dump_pad.css">
 </head>
-
 <body>
-        <h1>DRUM PAD</h1>
+    <h1>DRUM PAD</h1>
+
     <div class="pad">
-    <div data-key="65" class="key">
-        <kbd>A</kbd>
-        <span class="sound">clap</span>
+        <div data-key="65" class="key"><kbd>A</kbd><span class="sound">clap</span></div>
+        <div data-key="90" class="key"><kbd>Z</kbd><span class="sound">hihat</span></div>
+        <div data-key="69" class="key"><kbd>E</kbd><span class="sound">kick</span></div>
+        <div data-key="81" class="key"><kbd>Q</kbd><span class="sound">openhat</span></div>
+        <div data-key="83" class="key"><kbd>S</kbd><span class="sound">boom</span></div>
+        <div data-key="68" class="key"><kbd>D</kbd><span class="sound">ride</span></div>
+        <div data-key="87" class="key"><kbd>W</kbd><span class="sound">snare</span></div>
+        <div data-key="88" class="key"><kbd>X</kbd><span class="sound">tom</span></div>
+        <div data-key="67" class="key"><kbd>C</kbd><span class="sound">tink</span></div>
+        <!-- DEUXIÈME PARTIES -->
+        <div data-key="82" class="key"><kbd>R</kbd><span class="sound">record</span></div>
+        <div data-key="86" class="key"><kbd>V</kbd><span class="sound">play</span></div>
     </div>
-    <div data-key="90" class="key">
-        <kbd>Z</kbd>
-        <span class="sound">hihat</span>
-    </div>
-    <div data-key="69" class="key">
-        <kbd>E</kbd>
-        <span class="sound">kick</span>
-    </div>
-    <div data-key="81" class="key">
-        <kbd>Q</kbd>
-        <span class="sound">openhat</span>
-    </div>
-    <div data-key="83" class="key">
-        <kbd>S</kbd>
-        <span class="sound">boom</span>
-    </div>
-    <div data-key="68" class="key">
-        <kbd>D</kbd>
-        <span class="sound">ride</span>
-    </div>
-    <div data-key="87" class="key">
-        <kbd>W</kbd>
-        <span class="sound">snare</span>
-    </div>
-    <div data-key="88" class="key">
-        <kbd>X</kbd>
-        <span class="sound">tom</span>
-    </div>
-    <div data-key="67" class="key">
-        <kbd>C</kbd>
-        <span class="sound">tink</span>
-    </div>
-    <div data-key="82" class="key">
-        <kbd>R</kbd>
-        <span class="sound">record</span>
-    </div>
-    <div data-key="86" class="key">
-        <kbd>V</kbd>
-        <span class="sound">play</span>
-    </div>
-    </div>
-    <!-- Audio source -->
+
+    <!-- AUDIO -->
     <audio data-key="65" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/clap.wav"></audio>
     <audio data-key="90" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/hihat.wav"></audio>
     <audio data-key="69" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/kick.wav"></audio>

@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 
 html, body {
-  background: linear-gradient(to left, #A327F5 , #E727F5);
+  background: linear-gradient(to left, #9127F5 , #F52776);
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: auto;
   font-family: Raleway, sans-serif;
 }
 h1 {
@@ -46,18 +46,18 @@ h1 {
 .sound {
   font-size: 14px;
   text-transform: uppercase;
-  color: #F527C5;
+  color: #C227F5;
   margin-top: 7px
 }
 .key.playing {
   background-color: #ddd;
   box-shadow: 0 0 0 0 black;
   transform: translate(4px, 4px);
-  border-color: #F52776;
+  border-color: #F527B7;
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .key.playing .sound {
-  color: #F52776;
+  color: #F527B7;
   transform: scale(1.5);
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
