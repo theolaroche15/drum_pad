@@ -1,31 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 
-html, body {
-  background: linear-gradient(to left, #9127F5 , #F52738);
-  height: 100%;
-  width: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+  background: linear-gradient(to left, #9127F5, #F52738);
+  min-height: 100vh;
+}
+
+body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  overflow: auto;
-  font-family: Raleway, sans-serif;
+  padding-bottom: 40px;
 }
+
+
 h1 {
   color: black;
   font-size: 5vw;
   letter-spacing: 6px;
+  margin: 40px 0 20px 0;
 }
+
 .pad {
   width: 400px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 20px 30px;
   background-color: white;
   border: 4px solid black;
   box-shadow: 4px 4px 0 0 black;
 }
+
 .key {
   width: 100px;
   height: 100px;
@@ -43,12 +52,14 @@ h1 {
   user-select: none;
   transform: translate(0, 0);
 }
+
 .sound {
   font-size: 14px;
   text-transform: uppercase;
   color: #7D27F5;
-  margin-top: 7px
+  margin-top: 7px;
 }
+
 .key.playing {
   background-color: #ddd;
   box-shadow: 0 0 0 0 black;
@@ -56,11 +67,13 @@ h1 {
   border-color: #F527B7;
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .key.playing .sound {
   color: #F527B7;
   transform: scale(1.5);
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .key.recording {
   background-color: #F52727;
   color: white;

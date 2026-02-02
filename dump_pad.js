@@ -2,9 +2,9 @@ function playSound(e) {
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   if (!key || !audio) return;
-    key.classList.add('playing');
-    audio.currentTime = 0;
-    audio.play();
+  key.classList.add('playing');
+  audio.currentTime = 0;
+  audio.play();
   if (isRecording && e.keyCode !== 82 && e.keyCode !== 86) {
     recordedSequence.push({ keyCode: e.keyCode, time: Date.now() - startTime });
   }
@@ -12,7 +12,7 @@ function playSound(e) {
 
 function removeTransition(e) {
   if (e.propertyName !== 'transform') return;
-    this.classList.remove('playing');
+  this.classList.remove('playing');
 }
 
 window.addEventListener('keydown', playSound);
@@ -36,7 +36,7 @@ window.addEventListener('keydown', (e) => {
     } else {
       console.log("Enregistrement terminé");
     }
-    return; 
+    return;
   }
   if (key === 86 && recordedSequence.length) {
     const playPad = document.querySelector(`.key[data-key="86"]`);
@@ -71,8 +71,8 @@ function beatBox(sequence) {
   }
   function playBeat(keyCode, delay) {
     return new Promise(resolve => setTimeout(() => {
-        simulateKey(keyCode);
-        resolve();
+      simulateKey(keyCode);
+      resolve();
     }, delay));
   }
   let chain = Promise.resolve();
